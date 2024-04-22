@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Diseño Web: HTML y CSS",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "title": "Redux con Typescript",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "JavaScript para DOM",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Programación Imperativa con Javascript",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "React.js",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "title": "Next.js",
+      "completed": false
+    }
+  ]
+}
