@@ -10,7 +10,7 @@ export const TodoItem = ({handleCompletedTodo, title, completed, id}) => {
 				className="w-6 h-6 cursor-pointer accent-secondary"
 			/>
 			<label
-				className={`text-tertiary ${completed ? "line-through" : ""}`}
+				className={`text-white ${completed ? "line-through" : ""}`}
 				htmlFor="todo"
 			>
 				{title}
