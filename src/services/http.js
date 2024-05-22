@@ -1,12 +1,12 @@
 // Agregar a la base
 
-const URL_BASE = "http://localhost:3005/todos";
+const URL_BASE = "http://localhost:8080/tasks"; // aws
 
 // Defaul headers for fetch
-const defaultHeaders = {
-	"Content-Type": "application/json",
-	Accept: "application/json",
-};
+// const defaultHeaders = {
+// 	"Content-Type": "application/json",
+// 	Accept: "application/json",
+// };
 
 // Error class for http
 class HttpError extends Error {
@@ -28,26 +28,27 @@ function handleResponse(response) {
 export async function getTodos() {
 	const response = await fetch(URL_BASE, {
 		method: "GET",
-		headers: defaultHeaders,
+		// headers: defaultHeaders,
 	})
 
 	return handleResponse(response);
 }
 
-export async function addTodo(todo) {
+export async function addTodo({title}) {
 	const response = await fetch(URL_BASE, {
 		method: "POST",
-		headers: defaultHeaders,
-		body: JSON.stringify(todo),
+		// headers: defaultHeaders,
+		body: JSON.stringify(title),
 	})
 
 	return handleResponse(response);
 }
 
 export async function updateTodo(todo) {
+	console.log(todo);
 	const response = await fetch(`${URL_BASE}/${todo.id}`, {
 		method: "PUT",
-		headers: defaultHeaders,
+		// headers: defaultHeaders,
 		body: JSON.stringify(todo),
 	})
 
@@ -57,7 +58,7 @@ export async function updateTodo(todo) {
 export const deleteTodo = async (id) => {
 	const response = await fetch(`${URL_BASE}/${id}`, {
 		method: "DELETE",
-		headers: defaultHeaders,
+		// headers: defaultHeaders,
 	})
 
 	return handleResponse(response);
