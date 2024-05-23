@@ -6,11 +6,6 @@ export const Form = ({ handleAddTodo }) => {
 
   const handleSubmit = (event) => {
 
-    if (value.trim() === "") {
-      // Lanzar un mensaje de error
-      return
-    }
-
     event.preventDefault()
 
     if (!value) return
