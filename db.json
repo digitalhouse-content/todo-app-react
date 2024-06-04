@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "Diseño Web: HTML y CSS",
-      "completed": true
-    },
-    {
-      "id": 2,
-      "title": "Redux con Typescript",
-      "completed": true
-    },
-    {
       "id": 3,
       "title": "JavaScript para DOM",
       "completed": false
